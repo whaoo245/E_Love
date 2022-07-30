@@ -1,0 +1,102 @@
+body {
+	overflow-x: hidden;
+}
+
+.user_dashboard {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*userbackground*/
+	background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../../img/home2.jpg');
+	/*background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../../img/leaderboard_background4.jpg');*/
+	background-position: center;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+}
+
+.user_container {
+	margin-top: 20px;
+	margin-bottom: 7rem;
+	width: 95%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 3rem;
+}
+
+.user_box {
+
+	width: 23rem;
+	height: 90px;
+	background-color: #ffffff;
+	box-shadow: 0 5px 10px #e1e5ee;
+	border-radius: 20px;
+}
+
+.user_info {
+
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.user_info-detail {
+	margin: 1rem -3rem;
+}
+
+.user_img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin: 1rem 3rem;
+}
+
+.user_name {
+	color: #000000;
+	font-size: 18px;
+}
+
+.RP {
+	color: #000000;
+	font-weight: bold;
+	margin: 0.5rem 0;
+}
+
+.page-nav_container {
+	margin-bottom: 4rem;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+/* Dynamic Loading Message */
+.card-container_message {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+@media (max-width: 1050px) {
+	.user_box {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 1626px) {
+	.user_box {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 1245px) {
+	.user_box {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 950px) {
+	.user_container {
+		display: flex;
+		flex-direction: column;
+	}
+}

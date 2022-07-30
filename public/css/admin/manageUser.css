@@ -1,0 +1,125 @@
+.main-title {
+    margin: 0;
+}
+
+/* Search bar  */
+.user-search-wrapper {
+    display: flex;
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+.user-search-bar,
+.user-search-btn {
+    padding: 0.7em 1em;
+    background-color: #f5f5f5;
+}
+
+.user-search-bar {
+    width: 100%;
+    border: none;
+    background-color: #faf1f1
+}
+
+.user-search-btn {
+    display: inline;
+    margin: 0;
+    border-radius: 0;
+    color: #acacac;
+    background-color: #f6cdcd;
+}
+
+/* Main content */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.user-card {
+    width: 100%;
+    max-width: 20rem;
+    margin: 2.5rem 0;
+    padding: 2em;
+    border-radius: 1em;
+    /* background-color: #ffffff;*/
+    background-color: #f6f6f6;
+    box-shadow: 0.5rem 0.5rem 2.5rem var(--clr-shadow-grey);
+}
+
+.user-card-content {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0.5em;
+}
+
+.content-details {
+    margin-bottom: 1em;
+}
+
+.detail-title {
+    color: #B7BACB;
+    font-size: 20px;
+}
+
+.ban-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.ban-button {
+    border: solid 2px #ff0000;
+    color: #ff0000;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.ban-button:hover {
+    color: white;
+    background-color: #ff0000;
+}
+
+/* Dynamic Loading Message */
+.card-container_message {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/* JS styles for alert box */
+.swal2-styled.swal2-confirm {
+    background-color: #0066ff;
+}
+
+.alert_text {
+    color: white;
+}
+
+.swal2-popup .swal2-styled:focus {
+    box-shadow: none !important;
+}
+
+.swal2-html-container {
+    font-family: "montserrat-medium";
+}
+
+@media (max-width: 795px) {
+    .main-title {
+        text-align: center;
+    }
+
+    .user-card {
+        margin: 1.5em auto;
+    }
+}

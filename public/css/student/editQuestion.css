@@ -1,0 +1,18 @@
+.edit-question--main {
+  padding: 3rem 5rem 10rem;
+}
+
+.section {
+  margin-bottom: 2em;
+}
+
+/* Phone resolution styles */
+@media (max-width: 510px) {
+  .edit-question--main {
+    padding: 3rem 2rem 8rem;
+  }
+
+  .section {
+    margin-bottom: 1em;
+  }
+}
